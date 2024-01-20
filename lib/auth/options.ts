@@ -75,11 +75,11 @@ export const options: NextAuthOptions = {
       if (account) {
         return {
           access_token: user.access_token,
-          expires_at: Math.floor((Date.now() + (user.expires ?? 0)) / 1000),
+          expires_at: Date.now() + (user.expires ?? 0) * 1000,
           refresh_token: user.refresh_token,
           user: userParams(user),
         }
-      } else if (Date.now() < (token.expires_at ?? 0) * 1000) {
+      } else if (Date.now() < (token.expires_at ?? 0)) {
         return token
       } else {
         try {
@@ -90,7 +90,7 @@ export const options: NextAuthOptions = {
           return {
             ...token,
             access_token: result.access_token ?? "",
-            expires_at: Math.floor((Date.now() + (result.expires ?? 0)) / 1000),
+            expires_at: Date.now() + (result.expires ?? 0) * 1000,
             refresh_token: result.refresh_token ?? user.refresh_token,
             user: userParams(user),
           }
