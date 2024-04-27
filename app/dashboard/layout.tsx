@@ -1,6 +1,6 @@
+import AdminProvider from "@/components/admin-provider"
 import Header from "@/components/header"
 import Sidebar from "@/components/sidebar"
-import { ThemeProvider } from "@/components/theme-provider"
 import { options } from "@/lib/auth/options"
 import { UserAuthenticated } from "@/types/next-auth"
 import { getServerSession } from "next-auth"
@@ -11,19 +11,13 @@ export default async function DashboardLayout({
   children: React.ReactNode
 }) {
   const session = await getServerSession(options)
-  const user = session?.user as UserAuthenticated
 
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
-      disableTransitionOnChange
-    >
+    <AdminProvider session={session}>
       <div className="flex h-screen overflow-hidden">
         <Sidebar />
         <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
-          <Header user={user} />
+          <Header user={session?.user as UserAuthenticated} />
           <main>
             <div className="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
               {children}
@@ -31,6 +25,6 @@ export default async function DashboardLayout({
           </main>
         </div>
       </div>
-    </ThemeProvider>
+    </AdminProvider>
   )
 }

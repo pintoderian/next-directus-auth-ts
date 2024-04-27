@@ -56,7 +56,7 @@ export default function LoginForm() {
       setError(res?.error)
       setIsLoading(false)
     } else {
-      router.push("/")
+      router.push("/dashboard")
     }
   }
 
