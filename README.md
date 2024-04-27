@@ -1,4 +1,4 @@
-# Simple Dashboard Template with Next.js 13, Tailwind CSS, NextAuth.js, and Directus
+# Simple Dashboard Template with Next.js 14, Tailwind CSS, NextAuth.js, and Directus
 
 This project is a starting point for building a modern web dashboard using a robust technology stack. It provides you with the basic structure and tools necessary to kickstart the development of your own dashboard application.
 
@@ -13,7 +13,6 @@ This project is a starting point for building a modern web dashboard using a rob
 - Secure user authentication through NextAuth.js.
 - Dynamic content management with Directus.
 - Streamlines the initial setup of your project, saving you time.
-
 
 ## Technologies Used
 
@@ -52,7 +51,7 @@ Install dependencies:
 npm run install
 ```
 
-Prepare husky: 
+Prepare husky:
 
 ```bash
 npm run prepare
