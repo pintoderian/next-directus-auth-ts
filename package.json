@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "node .husky/install.mjs"
   },
   "dependencies": {
     "@directus/sdk": "^15.1.0",
