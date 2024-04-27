@@ -4,7 +4,7 @@
   "editor.formatOnPaste": true,
   "editor.fontWeight": "normal",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

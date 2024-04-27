@@ -16,7 +16,11 @@ declare module "next-auth" {
     user: DefaultSession["user"] & {
       id?: string
     }
-    error?: string
+    access_token?: string
+    expires_at?: number
+    refresh_token?: string
+    tokenIsRefreshed: boolean | null
+    error?: string | null
   }
 }
 
@@ -25,7 +29,8 @@ declare module "next-auth/jwt" {
     access_token?: string
     expires_at?: number
     refresh_token?: string
-    error?: string
+    error?: string | null
+    tokenIsRefreshed?: boolean | null
   }
 }
 
@@ -40,9 +45,9 @@ export type UserSession = {
   first_name: string;
   last_name: string;
   email: string;
-  access_token: string;
-  expires: number;
-  refresh_token: string;
+  access_token?: string;
+  expires?: number;
+  refresh_token?: string;
 }
 
 export type UserParams = {
