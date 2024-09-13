@@ -48,7 +48,7 @@ This project is a starting point for building a modern web dashboard using a rob
 
 Make sure you have the following installed before running the project:
 
-- [Node.js](https://nodejs.org/): version 18.8.0
+- [Node.js](https://nodejs.org/): version 20.9.0
 - [npm](https://www.npmjs.com/): JavaScript package manager
 
 ## Configuration
