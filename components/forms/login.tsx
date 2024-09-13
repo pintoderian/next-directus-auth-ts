@@ -112,7 +112,14 @@ export default function LoginForm() {
         )}
 
         <Button disabled={isLoading} type="submit">
-          {isLoading && <Spinner />} Login
+          {isLoading ? (
+            <div className="flex flex-row gap-2">
+              <Spinner />
+              <span>Loading ..</span>
+            </div>
+          ) : (
+            "Login"
+          )}
         </Button>
       </form>
     </Form>
