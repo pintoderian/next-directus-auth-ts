@@ -2,9 +2,23 @@
 
 This project is a starting point for building a modern web dashboard using a robust technology stack. It provides you with the basic structure and tools necessary to kickstart the development of your own dashboard application.
 
-![Auth Page](https://i.imgur.com/NrsfwoJ.png)
+## Screenshots
 
-![Dashboard Page](https://i.imgur.com/QORgzmQ.png)
+#### Light mode
+
+![Light mode](/screenshots/screenshot-1.png)
+
+#### Dark mode
+
+![Dark mode](/screenshots/screenshot-2.png)
+
+#### Mini sidebar
+
+![Mini sidebar](/screenshots/screenshot-3.png)
+
+#### Sheet menu
+
+<img src="/screenshots/screenshot-4.png" width="300">
 
 ## Key Features
 
@@ -28,6 +42,7 @@ This project is a starting point for building a modern web dashboard using a rob
 - [Husky](https://github.com/typicode/husky): Git hooks for running commands on pre-commit and pre-push actions.
 - [Prettier](https://prettier.io/): Automatic code formatter.
 - [ESLint](https://eslint.org/): Static code analysis tool.
+- [shadcn/ui sidebar](https://github.com/salimi-my/shadcn-ui-sidebar): Shadcn UI Sidebar.
 
 ## Requirements
 

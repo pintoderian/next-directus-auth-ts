@@ -41,25 +41,25 @@ export type AuthRefresh = {
 }
 
 export type UserSession = {
-  id: string;
-  first_name: string;
-  last_name: string;
-  email: string;
-  access_token?: string;
-  expires?: number;
-  refresh_token?: string;
+  id: string
+  first_name: string
+  last_name: string
+  email: string
+  access_token?: string
+  expires?: number
+  refresh_token?: string
 }
 
 export type UserParams = {
-  id?: string;
-  name?: string;
-  first_name?: string;
-  last_name?: string;
-  email?: string;
+  id?: string
+  name?: string
+  first_name?: string
+  last_name?: string
+  email?: string
 }
 
 export type UserAuthenticated = {
-  id?: string;
-  name?: string;
-  email?: string;
+  id?: string
+  name?: string
+  email?: string
 }
