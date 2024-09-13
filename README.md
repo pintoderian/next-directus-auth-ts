@@ -4,17 +4,17 @@ This project is a starting point for building a modern web dashboard using a rob
 
 ## Screenshots
 
+#### Login Page
+
+![Login page](/screenshots/screenshot-1.png)
+
 #### Light mode
 
-![Light mode](/screenshots/screenshot-1.png)
+![Light mode](/screenshots/screenshot-2.png)
 
 #### Dark mode
 
-![Dark mode](/screenshots/screenshot-2.png)
-
-#### Mini sidebar
-
-![Mini sidebar](/screenshots/screenshot-3.png)
+![Dark mode](/screenshots/screenshot-3.png)
 
 #### Sheet menu
 
