@@ -109,3 +109,9 @@ npm run build
 
 npm start
 ```
+
+<hr />
+
+### If you like my work, consider buying me a coffee!
+
+[Ko-fi](https://ko-fi.com/dpinto)
