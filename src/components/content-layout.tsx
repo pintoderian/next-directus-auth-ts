@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/admin-panel/navbar"
+import { Header } from "./header"
 
 interface ContentLayoutProps {
   title: string
@@ -8,8 +8,8 @@ interface ContentLayoutProps {
 export function ContentLayout({ title, children }: ContentLayoutProps) {
   return (
     <div>
-      <Navbar title={title} />
-      <div className="container px-4 pb-8 pt-8 sm:px-8">{children}</div>
+      <Header title={title} />
+      <div className="container px-4 py-8 sm:px-8">{children}</div>
     </div>
   )
 }

@@ -1,7 +1,9 @@
-import AdminPanelLayout from "@/components/admin-panel/admin-panel-layout"
 import AdminProvider from "@/components/admin-provider"
+import { SidebarProvider } from "@/components/ui/sidebar"
 import { options } from "@/lib/auth/options"
 import { getServerSession } from "next-auth"
+import { AppSidebar } from "@/components/app-sidebar"
+import { Footer } from "@/components/footer"
 
 export default async function DashboardLayout({
   children,
@@ -12,7 +14,13 @@ export default async function DashboardLayout({
 
   return (
     <AdminProvider session={session}>
-      <AdminPanelLayout>{children}</AdminPanelLayout>
+      <SidebarProvider>
+        <AppSidebar />
+        <div className="flex flex-1 flex-col">
+          <main className="grow">{children}</main>
+          <Footer />
+        </div>
+      </SidebarProvider>
     </AdminProvider>
   )
 }

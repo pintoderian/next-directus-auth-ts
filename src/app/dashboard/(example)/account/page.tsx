@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 import PlaceholderContent from "@/components/placeholder-content"
-import { ContentLayout } from "@/components/admin-panel/content-layout"
+import { ContentLayout } from "@/components/content-layout"
 import {
   Breadcrumb,
   BreadcrumbItem,
